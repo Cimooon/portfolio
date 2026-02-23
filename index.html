@@ -2,186 +2,269 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Mohamed IBISSOU — Data Engineer. Python, Azure, PySpark. Portfolio.">
+  <meta name="keywords" content="Mohamed IBISSOU, portfolio, Data Engineer, Python, Azure, PySpark, personal portfolio" />
+  <meta name="description" content="Mohamed IBISSOU — Data Engineer. Python, Azure, PySpark. Portfolio." />
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <title>Portfolio | Mohamed IBISSOU</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <!-- Sidebar -->
-  <aside class="sidebar">
-    <a href="#" class="sidebar-logo">Mohamed</a>
-    <nav class="sidebar-nav">
-      <a href="#home" class="sidebar-link active">Home</a>
-      <a href="#about" class="sidebar-link">About</a>
-      <a href="#skills" class="sidebar-link">Skills</a>
-      <a href="#education" class="sidebar-link">Education</a>
-      <a href="#work" class="sidebar-link">Work</a>
-      <a href="#experience" class="sidebar-link">Experience</a>
-      <a href="#contact" class="sidebar-link">Contact</a>
-    </nav>
-    <button class="sidebar-toggle" aria-label="Toggle menu">
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
-  </aside>
 
-  <main class="main">
-    <!-- Hero -->
-    <section class="hero" id="home">
-      <div class="hero-inner">
-        <h1 class="hero-title">Hi There,<br>I'm <span class="hero-name">Mohamed IBISSOU</span></h1>
-        <p class="hero-into">i am into <span class="hero-rotate" id="heroRotate">Data Engineer</span></p>
-      </div>
-    </section>
+<header>
+  <a href="/" class="logo"><i class="fas fa-database"></i> Mohamed</a>
+  <div id="menu" class="fas fa-bars"></div>
+  <nav class="navbar">
+    <ul>
+      <li><a class="active" href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#work">Work</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
 
-    <!-- About -->
-    <section class="section" id="about">
-      <h2 class="section-title">About Me</h2>
-      <div class="about-grid">
-        <div class="about-content">
-          <h3 class="about-heading">I'm Mohamed</h3>
-          <p class="about-role">Data Engineer</p>
-          <p class="about-text">I am a Data Engineer based in Nanterre, France. I design and maintain the data infrastructure that supports investment decisions for <strong>€250B+ in assets</strong> at AXA France. I build reliable pipelines using Python, Azure & PySpark. Passionate about turning business needs into scalable data solutions.</p>
-          <p class="about-meta"><strong>email :</strong> ibissou.mohamed@gmail.com</p>
-          <p class="about-meta"><strong>place :</strong> Nanterre, France — Paris region</p>
-          <a href="#contact" class="btn btn-resume">Resume</a>
+<section class="home" id="home">
+  <div id="particles-js"></div>
+  <div class="content">
+    <h2>Hi There,<br/> I'm Mohamed <span>IBISSOU</span></h2>
+    <p>i am into <span class="typing-text"></span></p>
+    <a href="#about" class="btn"><span>About Me</span>
+      <i class="fas fa-arrow-circle-down"></i>
+    </a>
+    <div class="socials">
+      <ul class="social-icons">
+        <li><a class="linkedin" aria-label="LinkedIn" href="https://www.linkedin.com/in/mohamedibissou" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+        <li><a class="github" aria-label="GitHub" href="https://github.com/mohamedibissou" target="_blank"><i class="fab fa-github"></i></a></li>
+        <li><a class="envelope" aria-label="Email" href="mailto:ibissou.mohamed@gmail.com"><i class="fas fa-envelope"></i></a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="image">
+    <img draggable="false" class="tilt" src="https://via.placeholder.com/500x500/2506ad/ffffff?text=MI" alt="Mohamed IBISSOU">
+  </div>
+</section>
+
+<section class="about" id="about">
+  <h2 class="heading"><i class="fas fa-user-alt"></i> About <span>Me</span></h2>
+  <div class="row">
+    <div class="image">
+      <img draggable="false" class="tilt" src="https://via.placeholder.com/400x480/2506ad/ffffff?text=Mohamed" alt="Mohamed">
+    </div>
+    <div class="content">
+      <h3>I'm Mohamed</h3>
+      <span class="tag">Data Engineer</span>
+      <p>I am a Data Engineer based in Nanterre, France. I design and maintain the data infrastructure that supports investment decisions for <strong>€250B+ in assets</strong> at AXA France. I build reliable pipelines using Python, Azure & PySpark. Passionate about turning business needs into scalable data solutions.</p>
+      <div class="box-container">
+        <div class="box">
+          <p><span> email : </span> ibissou.mohamed@gmail.com</p>
+          <p><span> place : </span> Nanterre, France — Paris region</p>
         </div>
       </div>
-    </section>
-
-    <!-- Skills -->
-    <section class="section" id="skills">
-      <h2 class="section-title">Skills & Abilities</h2>
-      <div class="skills-wrap">
-        <div class="skill-tag">Python</div>
-        <div class="skill-tag">PySpark</div>
-        <div class="skill-tag">SQL</div>
-        <div class="skill-tag">R</div>
-        <div class="skill-tag">Azure</div>
-        <div class="skill-tag">Azure Data Factory</div>
-        <div class="skill-tag">Azure Databricks</div>
-        <div class="skill-tag">Azure DevOps</div>
-        <div class="skill-tag">Power BI</div>
-        <div class="skill-tag">ETL</div>
-        <div class="skill-tag">Data Lake</div>
-        <div class="skill-tag">CI/CD</div>
+      <div class="resumebtn">
+        <a href="#contact" class="btn"><span>Resume</span>
+          <i class="fas fa-chevron-right"></i>
+        </a>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
 
-    <!-- Education -->
-    <section class="section" id="education">
-      <h2 class="section-title">My Education</h2>
-      <p class="section-sub">Education is not the learning of facts, but the training of the mind to think.</p>
-      <div class="edu-list">
-        <article class="edu-card">
-          <h3>Master Statistiques pour l'évaluation et la prospective</h3>
-          <p class="edu-school">Université de Reims-Champagne Ardenne</p>
-          <p class="edu-meta">2017-2018 | Completed</p>
-          <p class="edu-desc">Data analysis, Statistics, Big Data, Econometrics, Data Mining, Machine Learning, Business Intelligence. Tools: R, SAS, Python, SQL.</p>
-        </article>
-        <article class="edu-card">
-          <h3>Master Économie des entreprises et des marchés</h3>
-          <p class="edu-school">Université Paris Nord</p>
-          <p class="edu-meta">2016-2017 | Completed</p>
-          <p class="edu-desc">Marketing, Micro-Macro economics, Strategic forecasting, Statistics & surveys. Tools: Excel-VBA, SPSS, Sphinx.</p>
-        </article>
+<section class="skills" id="skills">
+  <h2 class="heading"><i class="fas fa-laptop-code"></i> Skills & <span>Abilities</span></h2>
+  <div class="container">
+    <div class="row" id="skillsContainer">
+      <div class="bar"><div class="info"><img src="https://img.icons8.com/color/48/000000/python--v1.png" alt="Python"/><span>Python</span></div></div>
+      <div class="bar"><div class="info"><img src="https://img.icons8.com/color/48/000000/azure-1.png" alt="Azure"/><span>Azure</span></div></div>
+      <div class="bar"><div class="info"><img src="https://img.icons8.com/color/48/000000/sql.png" alt="SQL"/><span>SQL</span></div></div>
+      <div class="bar"><div class="info"><img src="https://img.icons8.com/color/48/000000/power-bi.png" alt="Power BI"/><span>Power BI</span></div></div>
+      <div class="bar"><div class="info"><i class="fas fa-database" style="font-size: 3rem; color: #2506ad;"></i><span>PySpark</span></div></div>
+      <div class="bar"><div class="info"><i class="fas fa-cloud" style="font-size: 3rem; color: #2506ad;"></i><span>ETL</span></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="education" id="education">
+  <h1 class="heading"><i class="fas fa-graduation-cap"></i> My <span>Education</span></h1>
+  <p class="qoute">Education is not the learning of facts, but the training of the mind to think.</p>
+  <div class="box-container">
+    <div class="box">
+      <div class="image">
+        <img draggable="false" src="https://via.placeholder.com/400x220/012970/ffffff?text=URCA" alt="University">
       </div>
-    </section>
+      <div class="content">
+        <h3>Master Statistiques pour l'évaluation et la prospective</h3>
+        <p>Université de Reims-Champagne Ardenne</p>
+        <h4>2017-2018 | Completed</h4>
+      </div>
+    </div>
+    <div class="box">
+      <div class="image">
+        <img draggable="false" src="https://via.placeholder.com/400x220/012970/ffffff?text=Paris+Nord" alt="University">
+      </div>
+      <div class="content">
+        <h3>Master Économie des entreprises et des marchés</h3>
+        <p>Université Paris Nord</p>
+        <h4>2016-2017 | Completed</h4>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <!-- Work (Projects) -->
-    <section class="section" id="work">
-      <h2 class="section-title">Projects Made</h2>
-      <div class="work-grid">
-        <article class="work-card">
-          <h3>Azure Data Lake Migration</h3>
-          <p class="work-company">AXA Investment Division</p>
+<section class="work" id="work">
+  <h2 class="heading"><i class="fas fa-laptop-code"></i> Projects <span>Made</span></h2>
+  <div class="box-container">
+    <div class="box tilt">
+      <img draggable="false" src="https://via.placeholder.com/600x400/000031/ffffff?text=Azure+Data+Lake" alt="Project" />
+      <div class="content">
+        <div class="tag"><h3>Azure Data Lake Migration</h3></div>
+        <div class="desc">
           <p>Designed and built cloud pipelines with Azure Data Factory and Databricks. Scalable, auditable data platform with dev / UAT / prod separation.</p>
-          <p class="work-tech">Python · PySpark · Azure Data Factory · Databricks · Azure DevOps</p>
-        </article>
-        <article class="work-card">
-          <h3>Automated Investment Reporting</h3>
-          <p class="work-company">AXA France</p>
-          <p>Automated ETL pipelines for monthly financial data and report generation. Reduced manual work, improved consistency and turnaround.</p>
-          <p class="work-tech">Python · SQL · Power BI · Azure</p>
-        </article>
-      </div>
-      <a href="#contact" class="link-view-all">View All</a>
-    </section>
-
-    <!-- Experience -->
-    <section class="section" id="experience">
-      <h2 class="section-title">Experience</h2>
-      <div class="exp-cards">
-        <article class="exp-card">
-          <h3>AXA France</h3>
-          <p class="exp-role">Data Engineer</p>
-          <p class="exp-date">July 2019 - Present</p>
-        </article>
-        <article class="exp-card">
-          <h3>Orange</h3>
-          <p class="exp-role">Data Analyst | Internship</p>
-          <p class="exp-date">April 2018 - Sept 2018</p>
-        </article>
-        <article class="exp-card">
-          <h3>Centre d'Économie Paris Nord</h3>
-          <p class="exp-role">Assistant Project Manager</p>
-          <p class="exp-date">March 2017 - July 2017</p>
-        </article>
-        <article class="exp-card">
-          <h3>Maison du Développement Économique</h3>
-          <p class="exp-role">Data & Research | Internship</p>
-          <p class="exp-date">June 2016 - July 2016</p>
-        </article>
-      </div>
-      <a href="#contact" class="link-view-all">View All</a>
-    </section>
-
-    <!-- Contact -->
-    <section class="section contact-section" id="contact">
-      <h2 class="section-title">Get in Touch</h2>
-      <div class="contact-wrap">
-        <p class="contact-text">Open to roles where I can design and run data systems that drive impact. Let's talk.</p>
-        <a href="mailto:ibissou.mohamed@gmail.com" class="btn btn-submit">Submit</a>
-        <div class="contact-links">
-          <a href="mailto:ibissou.mohamed@gmail.com">ibissou.mohamed@gmail.com</a>
-          <a href="https://linkedin.com/in/mohamedibissou" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-          <a href="https://github.com/mohamedibissou" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <div class="btns">
+            <a href="#contact" class="btn"><i class="fas fa-eye"></i> View</a>
+            <a href="https://github.com/mohamedibissou" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
+          </div>
         </div>
       </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-      <div class="footer-inner">
-        <div class="footer-brand">
-          <h3>Mohamed's Portfolio</h3>
-          <p>Thank you for visiting my personal portfolio. Connect with me over socials. Keep Rising 🚀</p>
-        </div>
-        <div class="footer-links">
-          <p class="footer-label">quick links</p>
-          <a href="#home">home</a>
-          <a href="#about">about</a>
-          <a href="#skills">skills</a>
-          <a href="#education">education</a>
-          <a href="#work">work</a>
-          <a href="#experience">experience</a>
-        </div>
-        <div class="footer-contact">
-          <p class="footer-label">contact info</p>
-          <p>(+33) 7 58 09 00 44</p>
-          <p>ibissou.mohamed@gmail.com</p>
-          <p>Nanterre, France</p>
+    </div>
+    <div class="box tilt">
+      <img draggable="false" src="https://via.placeholder.com/600x400/000031/ffffff?text=Reporting+ETL" alt="Project" />
+      <div class="content">
+        <div class="tag"><h3>Automated Investment Reporting</h3></div>
+        <div class="desc">
+          <p>Automated ETL pipelines for monthly financial data and report generation. Reduced manual work, improved consistency.</p>
+          <div class="btns">
+            <a href="#contact" class="btn"><i class="fas fa-eye"></i> View</a>
+            <a href="https://github.com/mohamedibissou" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
+          </div>
         </div>
       </div>
-      <p class="footer-credit">Designed with ❤️ by Mohamed IBISSOU</p>
-    </footer>
-  </main>
+    </div>
+  </div>
+  <div class="viewall">
+    <a href="#contact" class="btn"><span>View All</span> <i class="fas fa-arrow-right"></i></a>
+  </div>
+</section>
 
-  <script src="js/script.js"></script>
+<section class="experience" id="experience">
+  <h2 class="heading"><i class="fas fa-briefcase"></i> Experience</h2>
+  <div class="timeline">
+    <div class="container right">
+      <div class="content">
+        <div class="tag"><h2>AXA France</h2></div>
+        <div class="desc">
+          <h3>Data Engineer</h3>
+          <p>July 2019 - Present</p>
+        </div>
+      </div>
+    </div>
+    <div class="container left">
+      <div class="content">
+        <div class="tag"><h2>Orange</h2></div>
+        <div class="desc">
+          <h3>Data Analyst | Internship</h3>
+          <p>April 2018 - Sept 2018</p>
+        </div>
+      </div>
+    </div>
+    <div class="container right">
+      <div class="content">
+        <div class="tag"><h2>Centre d'Économie Paris Nord</h2></div>
+        <div class="desc">
+          <h3>Assistant Project Manager</h3>
+          <p>March 2017 - July 2017</p>
+        </div>
+      </div>
+    </div>
+    <div class="container left">
+      <div class="content">
+        <div class="tag"><h2>Maison du Développement Économique</h2></div>
+        <div class="desc">
+          <h3>Data & Research | Internship</h3>
+          <p>June 2016 - July 2016</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="morebtn">
+    <a href="#contact" class="btn"><span>View All</span> <i class="fas fa-arrow-right"></i></a>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <h2 class="heading"><i class="fas fa-headset"></i> Get in <span>Touch</span></h2>
+  <div class="container">
+    <div class="content">
+      <div class="image-box">
+        <img draggable="false" src="https://via.placeholder.com/400x500/e5ecfb/2506ad?text=Contact" alt="Contact">
+      </div>
+      <form id="contact-form" class="contact-form">
+        <div class="form-group">
+          <div class="field">
+            <input type="text" name="name" placeholder="Name" required>
+            <i class="fas fa-user"></i>
+          </div>
+          <div class="field">
+            <input type="email" name="email" placeholder="Email" required>
+            <i class="fas fa-envelope"></i>
+          </div>
+          <div class="field">
+            <input type="text" name="phone" placeholder="Phone">
+            <i class="fas fa-phone-alt"></i>
+          </div>
+          <div class="message">
+            <textarea placeholder="Message" name="message" required></textarea>
+            <i class="fas fa-comment-dots"></i>
+          </div>
+        </div>
+        <div class="button-area">
+          <button type="submit">Submit <i class="fa fa-paper-plane"></i></button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<section class="footer">
+  <div class="box-container">
+    <div class="box">
+      <h3>Mohamed's Portfolio</h3>
+      <p>Thank you for visiting my personal portfolio website. Connect with me over socials.<br/><br/>Keep Rising 🚀</p>
+    </div>
+    <div class="box">
+      <h3>quick links</h3>
+      <a href="#home"><i class="fas fa-chevron-circle-right"></i> home</a>
+      <a href="#about"><i class="fas fa-chevron-circle-right"></i> about</a>
+      <a href="#skills"><i class="fas fa-chevron-circle-right"></i> skills</a>
+      <a href="#education"><i class="fas fa-chevron-circle-right"></i> education</a>
+      <a href="#work"><i class="fas fa-chevron-circle-right"></i> work</a>
+      <a href="#experience"><i class="fas fa-chevron-circle-right"></i> experience</a>
+    </div>
+    <div class="box">
+      <h3>contact info</h3>
+      <p><i class="fas fa-phone"></i> (+33) 7 58 09 00 44</p>
+      <p><i class="fas fa-envelope"></i> ibissou.mohamed@gmail.com</p>
+      <p><i class="fas fa-map-marked-alt"></i> Nanterre, France</p>
+      <div class="share">
+        <a href="https://www.linkedin.com/in/mohamedibissou" class="fab fa-linkedin" aria-label="LinkedIn" target="_blank"></a>
+        <a href="https://github.com/mohamedibissou" class="fab fa-github" aria-label="GitHub" target="_blank"></a>
+        <a href="mailto:ibissou.mohamed@gmail.com" class="fas fa-envelope" aria-label="Mail" target="_blank"></a>
+      </div>
+    </div>
+  </div>
+  <h1 class="credit">Designed with <i class="fa fa-heart pulse"></i> by <a href="https://www.linkedin.com/in/mohamedibissou">Mohamed IBISSOU</a></h1>
+</section>
+
+<a href="#home" aria-label="ScrollTop" class="fas fa-angle-up" id="scroll-top"></a>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js" crossorigin="anonymous"></script>
+<script src="./assets/js/script.js"></script>
 </body>
 </html>
