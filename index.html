@@ -1,152 +1,186 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Mohamed IBISSOU — Data Engineer. Python, Azure, PySpark. 5+ ans d'expérience. Paris, France.">
-  <title>Mohamed IBISSOU | Data Engineer</title>
+  <meta name="description" content="Mohamed IBISSOU — Data Engineer. Python, Azure, PySpark. Portfolio.">
+  <title>Portfolio | Mohamed IBISSOU</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <header class="header">
-    <nav class="nav container">
-      <a href="#" class="logo">Mohamed IBISSOU</a>
-      <button class="nav-toggle" aria-label="Menu">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-      <ul class="nav-links">
-        <li><a href="#about">À propos</a></li>
-        <li><a href="#experience">Expérience</a></li>
-        <li><a href="#projects">Projets</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <a href="#" class="sidebar-logo">Mohamed</a>
+    <nav class="sidebar-nav">
+      <a href="#home" class="sidebar-link active">Home</a>
+      <a href="#about" class="sidebar-link">About</a>
+      <a href="#skills" class="sidebar-link">Skills</a>
+      <a href="#education" class="sidebar-link">Education</a>
+      <a href="#work" class="sidebar-link">Work</a>
+      <a href="#experience" class="sidebar-link">Experience</a>
+      <a href="#contact" class="sidebar-link">Contact</a>
     </nav>
-  </header>
+    <button class="sidebar-toggle" aria-label="Toggle menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </aside>
 
-  <main>
-    <section class="hero" id="hero">
-      <div class="hero-inner container">
-        <p class="hero-label">Data Engineer</p>
-        <h1 class="hero-name">Mohamed<br>IBISSOU</h1>
-        <p class="hero-tagline">Données financières à grande échelle · Python, Azure & PySpark</p>
-        <a href="#about" class="hero-cta">Découvrir</a>
+  <main class="main">
+    <!-- Hero -->
+    <section class="hero" id="home">
+      <div class="hero-inner">
+        <h1 class="hero-title">Hi There,<br>I'm <span class="hero-name">Mohamed IBISSOU</span></h1>
+        <p class="hero-into">i am into <span class="hero-rotate" id="heroRotate">Data Engineer</span></p>
       </div>
     </section>
 
-    <section class="section about" id="about">
-      <div class="container about-wrap">
-        <div class="section-label">À propos</div>
+    <!-- About -->
+    <section class="section" id="about">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-grid">
         <div class="about-content">
-          <div class="about-main">
-            <p class="about-lead">Je suis Data Engineer chez <strong>AXA France</strong>. Je conçois et maintiens l’infrastructure data qui supporte les décisions d’investissement pour <strong>plus de 250 Md€ d’actifs</strong> en France et en Europe.</p>
-            <p>Fiabilité, automatisation et migration vers le cloud sont au cœur de mon travail. Formé à l’économétrie et au machine learning (Master Statistiques & Évaluation), j’ai évolué vers les systèmes en production : pipelines ETL, modélisation des données, reporting cross-équipes.</p>
-            <p><strong>Je fais le lien entre l’analyse quantitative et l’ingénierie de production</strong> — transformer les besoins métier en solutions data robustes et scalables.</p>
-          </div>
-          <aside class="about-side">
-            <div class="about-meta">
-              <p><strong>Poste actuel</strong><br>Data Engineer · AXA France</p>
-              <p><strong>Localisation</strong><br>Nanterre, Paris</p>
-              <p><strong>Langues</strong><br>Français · Anglais · Arabe</p>
-            </div>
-          </aside>
+          <h3 class="about-heading">I'm Mohamed</h3>
+          <p class="about-role">Data Engineer</p>
+          <p class="about-text">I am a Data Engineer based in Nanterre, France. I design and maintain the data infrastructure that supports investment decisions for <strong>€250B+ in assets</strong> at AXA France. I build reliable pipelines using Python, Azure & PySpark. Passionate about turning business needs into scalable data solutions.</p>
+          <p class="about-meta"><strong>email :</strong> ibissou.mohamed@gmail.com</p>
+          <p class="about-meta"><strong>place :</strong> Nanterre, France — Paris region</p>
+          <a href="#contact" class="btn btn-resume">Resume</a>
         </div>
       </div>
     </section>
 
-    <section class="section experience" id="experience">
-      <div class="container">
-        <div class="section-label">Expérience</div>
-        <div class="exp-list">
-          <article class="exp-item">
-            <div class="exp-date">2019 — Aujourd’hui</div>
-            <div class="exp-body">
-              <h3>Data Engineer</h3>
-              <p class="exp-company">AXA France — Investment Data & Technology, Nanterre</p>
-              <p class="exp-desc">Ingestion et traitement mensuel des données d’actifs financiers (~250 Md€). Qualité et enrichissement des données pour Investissements et Risk Management. Migration vers le Datalake Azure : pipelines ETL, ingestion, déploiement dev / UAT / prod.</p>
-              <p class="exp-tech">Python · PySpark · SQL · Power BI · Azure Databricks · Azure DevOps · Azure Data Factory</p>
-            </div>
-          </article>
-          <article class="exp-item">
-            <div class="exp-date">2018</div>
-            <div class="exp-body">
-              <h3>Data Analyst <em>(Stage)</em></h3>
-              <p class="exp-company">Orange — Business Intelligence, Châtillon</p>
-              <p class="exp-desc">Analyse des données mobiles (Europe, MEA). Requêtes SQL, automatisation des rapports (VBA, Think-cell), analyse prédictive (R, Python).</p>
-              <p class="exp-tech">SQL · R · Python · VBA · Think-cell</p>
-            </div>
-          </article>
-          <article class="exp-item">
-            <div class="exp-date">2017</div>
-            <div class="exp-body">
-              <h3>Assistant chef de projet</h3>
-              <p class="exp-company">Centre d’Économie Paris Nord</p>
-              <p class="exp-desc">Recueil, traitement et analyse de données quantitatives et qualitatives. Projet HCERES, base d’activités.</p>
-            </div>
-          </article>
-          <article class="exp-item">
-            <div class="exp-date">2016</div>
-            <div class="exp-body">
-              <h3>Stage Data & Recherche</h3>
-              <p class="exp-company">Maison du Développement Économique, Dunkerque</p>
-              <p class="exp-desc">Questionnaires de satisfaction, analyse (Sphinx).</p>
-            </div>
-          </article>
-        </div>
+    <!-- Skills -->
+    <section class="section" id="skills">
+      <h2 class="section-title">Skills & Abilities</h2>
+      <div class="skills-wrap">
+        <div class="skill-tag">Python</div>
+        <div class="skill-tag">PySpark</div>
+        <div class="skill-tag">SQL</div>
+        <div class="skill-tag">R</div>
+        <div class="skill-tag">Azure</div>
+        <div class="skill-tag">Azure Data Factory</div>
+        <div class="skill-tag">Azure Databricks</div>
+        <div class="skill-tag">Azure DevOps</div>
+        <div class="skill-tag">Power BI</div>
+        <div class="skill-tag">ETL</div>
+        <div class="skill-tag">Data Lake</div>
+        <div class="skill-tag">CI/CD</div>
       </div>
     </section>
 
-    <section class="section projects" id="projects">
-      <div class="container">
-        <div class="section-label">Projets</div>
-        <div class="projects-grid">
-          <article class="project-item">
-            <h3>Migration Data Lake Azure</h3>
-            <p class="project-company">AXA Investment Division</p>
-            <p>Conception et mise en place des pipelines cloud (Azure Data Factory, Databricks), déploiement via Azure DevOps. Plateforme data scalable et traçable, séparation dev / UAT / prod.</p>
-            <p class="project-tech">Python · PySpark · Azure Data Factory · Databricks · Azure DevOps</p>
-          </article>
-          <article class="project-item">
-            <h3>Reporting investissement automatisé</h3>
-            <p class="project-company">AXA France</p>
-            <p>Pipelines ETL automatisés pour les données financières mensuelles et la génération de rapports. Réduction du travail manuel, rapports plus cohérents.</p>
-            <p class="project-tech">Python · SQL · Power BI · Azure</p>
-          </article>
-        </div>
+    <!-- Education -->
+    <section class="section" id="education">
+      <h2 class="section-title">My Education</h2>
+      <p class="section-sub">Education is not the learning of facts, but the training of the mind to think.</p>
+      <div class="edu-list">
+        <article class="edu-card">
+          <h3>Master Statistiques pour l'évaluation et la prospective</h3>
+          <p class="edu-school">Université de Reims-Champagne Ardenne</p>
+          <p class="edu-meta">2017-2018 | Completed</p>
+          <p class="edu-desc">Data analysis, Statistics, Big Data, Econometrics, Data Mining, Machine Learning, Business Intelligence. Tools: R, SAS, Python, SQL.</p>
+        </article>
+        <article class="edu-card">
+          <h3>Master Économie des entreprises et des marchés</h3>
+          <p class="edu-school">Université Paris Nord</p>
+          <p class="edu-meta">2016-2017 | Completed</p>
+          <p class="edu-desc">Marketing, Micro-Macro economics, Strategic forecasting, Statistics & surveys. Tools: Excel-VBA, SPSS, Sphinx.</p>
+        </article>
       </div>
     </section>
 
-    <section class="section skills" id="skills">
-      <div class="container">
-        <div class="section-label">Compétences</div>
-        <p class="skills-text">Python · PySpark · SQL · R · Azure (Data Factory, Databricks, DevOps) · Power BI · ETL / Data Lake · Data modeling · CI/CD</p>
+    <!-- Work (Projects) -->
+    <section class="section" id="work">
+      <h2 class="section-title">Projects Made</h2>
+      <div class="work-grid">
+        <article class="work-card">
+          <h3>Azure Data Lake Migration</h3>
+          <p class="work-company">AXA Investment Division</p>
+          <p>Designed and built cloud pipelines with Azure Data Factory and Databricks. Scalable, auditable data platform with dev / UAT / prod separation.</p>
+          <p class="work-tech">Python · PySpark · Azure Data Factory · Databricks · Azure DevOps</p>
+        </article>
+        <article class="work-card">
+          <h3>Automated Investment Reporting</h3>
+          <p class="work-company">AXA France</p>
+          <p>Automated ETL pipelines for monthly financial data and report generation. Reduced manual work, improved consistency and turnaround.</p>
+          <p class="work-tech">Python · SQL · Power BI · Azure</p>
+        </article>
       </div>
+      <a href="#contact" class="link-view-all">View All</a>
     </section>
 
-    <section class="section contact" id="contact">
-      <div class="container contact-wrap">
-        <div class="section-label">Contact</div>
-        <h2 class="contact-title">Travaillons ensemble</h2>
-        <p class="contact-lead">Ouvert aux opportunités où je peux concevoir et faire tourner des systèmes data à fort impact. Data Engineer à l’aise avec la data et le métier — parlons-en.</p>
+    <!-- Experience -->
+    <section class="section" id="experience">
+      <h2 class="section-title">Experience</h2>
+      <div class="exp-cards">
+        <article class="exp-card">
+          <h3>AXA France</h3>
+          <p class="exp-role">Data Engineer</p>
+          <p class="exp-date">July 2019 - Present</p>
+        </article>
+        <article class="exp-card">
+          <h3>Orange</h3>
+          <p class="exp-role">Data Analyst | Internship</p>
+          <p class="exp-date">April 2018 - Sept 2018</p>
+        </article>
+        <article class="exp-card">
+          <h3>Centre d'Économie Paris Nord</h3>
+          <p class="exp-role">Assistant Project Manager</p>
+          <p class="exp-date">March 2017 - July 2017</p>
+        </article>
+        <article class="exp-card">
+          <h3>Maison du Développement Économique</h3>
+          <p class="exp-role">Data & Research | Internship</p>
+          <p class="exp-date">June 2016 - July 2016</p>
+        </article>
+      </div>
+      <a href="#contact" class="link-view-all">View All</a>
+    </section>
+
+    <!-- Contact -->
+    <section class="section contact-section" id="contact">
+      <h2 class="section-title">Get in Touch</h2>
+      <div class="contact-wrap">
+        <p class="contact-text">Open to roles where I can design and run data systems that drive impact. Let's talk.</p>
+        <a href="mailto:ibissou.mohamed@gmail.com" class="btn btn-submit">Submit</a>
         <div class="contact-links">
           <a href="mailto:ibissou.mohamed@gmail.com">ibissou.mohamed@gmail.com</a>
           <a href="https://linkedin.com/in/mohamedibissou" target="_blank" rel="noopener noreferrer">LinkedIn</a>
           <a href="https://github.com/mohamedibissou" target="_blank" rel="noopener noreferrer">GitHub</a>
         </div>
-        <p class="contact-note">Nanterre, France · Réponse sous 24–48 h</p>
       </div>
     </section>
-  </main>
 
-  <footer class="footer">
-    <div class="container">
-      <p>© 2025 Mohamed IBISSOU</p>
-    </div>
-  </footer>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <h3>Mohamed's Portfolio</h3>
+          <p>Thank you for visiting my personal portfolio. Connect with me over socials. Keep Rising 🚀</p>
+        </div>
+        <div class="footer-links">
+          <p class="footer-label">quick links</p>
+          <a href="#home">home</a>
+          <a href="#about">about</a>
+          <a href="#skills">skills</a>
+          <a href="#education">education</a>
+          <a href="#work">work</a>
+          <a href="#experience">experience</a>
+        </div>
+        <div class="footer-contact">
+          <p class="footer-label">contact info</p>
+          <p>(+33) 7 58 09 00 44</p>
+          <p>ibissou.mohamed@gmail.com</p>
+          <p>Nanterre, France</p>
+        </div>
+      </div>
+      <p class="footer-credit">Designed with ❤️ by Mohamed IBISSOU</p>
+    </footer>
+  </main>
 
   <script src="js/script.js"></script>
 </body>
